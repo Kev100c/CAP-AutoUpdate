@@ -15,7 +15,13 @@ func _process(delta: float) -> void:
     if _tick_counter >= _tick_counter_interval:
         _tick_counter = 0
         if capAutoUpdate:
-            _on_upgrade_button_pressed()
+            _upgrade()
+            
+func _upgrade() -> void:
+    if can_upgrade():
+        Globals.currencies["money"] -= cost
+        upgrade()
+        Sound.play("upgrade")
 
 func _ready() -> void:
     super()
