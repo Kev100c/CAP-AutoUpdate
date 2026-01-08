@@ -49,6 +49,11 @@ func install_script_extensions() -> void:
     ModLoaderMod.install_script_extension(extensions_dir_path.path_join("scenes/windows/window_gpu_cluster.gd"))
     ModLoaderMod.install_script_extension(extensions_dir_path.path_join("scenes/windows/window_crafter.gd"))
     ModLoaderMod.install_script_extension(extensions_dir_path.path_join("scenes/windows/window_oil_refiner.gd"))
+    ModLoaderMod.install_script_extension(extensions_dir_path.path_join("scenes/windows/window_oil_pump.gd"))
+    ModLoaderMod.install_script_extension(extensions_dir_path.path_join("scenes/windows/window_miner.gd"))
+    ModLoaderMod.install_script_extension(extensions_dir_path.path_join("scenes/windows/window_excavator.gd"))
+    ModLoaderMod.install_script_extension(extensions_dir_path.path_join("scenes/windows/window_heat_sink.gd"))
+    
 
 
 func install_script_hook_files() -> void:
